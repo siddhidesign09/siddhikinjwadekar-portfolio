@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Check, Copy, ArrowUpRight, MapPin, Download } from "lucide-react";
 import { PERSONAL_DETAILS } from "../data/portfolioData";
-import { useRouter } from "../router/RouterContext";
+import { useRouter, withBasePath } from "../router/RouterContext";
 
 export const ContactFooter: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -143,7 +143,7 @@ export const ContactFooter: React.FC = () => {
                   <ArrowUpRight className="w-3 h-3 text-[#EA6C11]" />
                 </a>
                 <a
-                  href="/assets/aistudio/Case_Studies_1bddce2b.pdf"
+                  href={withBasePath("/assets/aistudio/Case_Studies_1bddce2b.pdf")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between p-2.5 rounded bg-white/[0.05] hover:bg-white/[0.1] text-xs font-mono text-white transition-colors"
@@ -170,12 +170,12 @@ export const ContactFooter: React.FC = () => {
               className="bg-white px-3 py-1.5 rounded-md border border-white/20 focus:outline-none"
             >
               <img
-                src="/sk-logo.png"
+                src={withBasePath("/sk-logo.png")}
                 alt="Siddhi Kinjawadekar Logo"
                 className="h-7 w-auto object-contain"
                 onError={(e) => {
                   (e.currentTarget as HTMLImageElement).src =
-                    "/assets/aistudio/f7b7e6ef-df87-4a61-b3d8-83a3d543690d_08dd6e38.png";
+                    withBasePath("/assets/aistudio/f7b7e6ef-df87-4a61-b3d8-83a3d543690d_08dd6e38.png");
                 }}
               />
             </button>

@@ -1,4 +1,9 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import { stripBasePath, withBasePath as resolveWithBase } from "./pathUtils";
+
+const BASE_URL = import.meta.env.BASE_URL || "/";
+
+export const withBasePath = (path: string): string => resolveWithBase(path, BASE_URL);
 
 interface RouterContextType {
   currentPath: string;
@@ -15,14 +20,14 @@ export const useRouter = () => useContext(RouterContext);
 export const RouterProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [currentPath, setCurrentPath] = useState<string>(() => {
     if (typeof window !== "undefined") {
-      return window.location.pathname || "/";
+      return stripBasePath(window.location.pathname || "/", BASE_URL);
     }
     return "/";
   });
 
   useEffect(() => {
     const handlePopState = () => {
-      setCurrentPath(window.location.pathname || "/");
+      setCurrentPath(stripBasePath(window.location.pathname || "/", BASE_URL));
       window.scrollTo({ top: 0, behavior: "instant" });
     };
 
@@ -31,12 +36,13 @@ export const RouterProvider: React.FC<{ children: ReactNode }> = ({ children }) 
   }, []);
 
   const navigate = (to: string) => {
-    if (to === currentPath) {
+    const targetRoute = stripBasePath(to, BASE_URL);
+    if (targetRoute === currentPath) {
       window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
-    window.history.pushState({}, "", to);
-    setCurrentPath(to);
+    window.history.pushState({}, "", withBasePath(targetRoute));
+    setCurrentPath(targetRoute);
     window.scrollTo({ top: 0, behavior: "instant" });
   };
 
@@ -55,6 +61,7 @@ interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 
 export const Link: React.FC<LinkProps> = ({ href, children, className, onClick, ...props }) => {
   const { navigate } = useRouter();
+  const resolvedHref = href.startsWith("/") ? withBasePath(href) : href;
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (onClick) onClick(e);
@@ -70,7 +77,7 @@ export const Link: React.FC<LinkProps> = ({ href, children, className, onClick, 
   };
 
   return (
-    <a href={href} onClick={handleClick} className={className} {...props}>
+    <a href={resolvedHref} onClick={handleClick} className={className} {...props}>
       {children}
     </a>
   );

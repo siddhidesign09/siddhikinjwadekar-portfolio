@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X, ArrowUpRight, Download } from "lucide-react";
 import { PERSONAL_DETAILS } from "../data/portfolioData";
-import { useRouter } from "../router/RouterContext";
+import { useRouter, withBasePath } from "../router/RouterContext";
 
 interface NavbarProps {
   activeTab?: string;
@@ -46,7 +46,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab = "home", onNavigate }
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-8">
         {/* Zone 1: Brand Wordmark / Original SK Logo */}
         <a
-          href="/"
+          href={withBasePath("/")}
           onClick={(e) => {
             e.preventDefault();
             handleNavClick("#top", "home");
@@ -55,13 +55,13 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab = "home", onNavigate }
           aria-label="Siddhi Kinjawadekar - Home"
         >
           <img
-            src="/sk-logo.png"
+            src={withBasePath("/sk-logo.png")}
             alt="Siddhi Kinjawadekar - Design, Identity, Visual Storytelling"
             className="h-10 sm:h-11 w-auto object-contain transition-opacity group-hover:opacity-90"
             onError={(e) => {
               // Graceful fallback to original path if relative alias issues arise
               (e.currentTarget as HTMLImageElement).src =
-                "/assets/aistudio/f7b7e6ef-df87-4a61-b3d8-83a3d543690d_08dd6e38.png";
+                withBasePath("/assets/aistudio/f7b7e6ef-df87-4a61-b3d8-83a3d543690d_08dd6e38.png");
             }}
           />
         </a>
@@ -104,7 +104,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab = "home", onNavigate }
         {/* Zone 3: 1 Primary Action (Download Resume / Get In Touch) */}
         <div className="hidden md:flex items-center gap-4 shrink-0">
           <a
-            href="/assets/aistudio/Case_Studies_1bddce2b.pdf"
+            href={withBasePath("/assets/aistudio/Case_Studies_1bddce2b.pdf")}
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-semibold tracking-wider uppercase text-black bg-transparent border border-black/20 hover:border-black/60 transition-all rounded-sm overflow-hidden"
@@ -169,7 +169,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab = "home", onNavigate }
           </div>
           <div className="pt-4 border-t border-black/[0.08]">
             <a
-              href="/assets/aistudio/Case_Studies_1bddce2b.pdf"
+              href={withBasePath("/assets/aistudio/Case_Studies_1bddce2b.pdf")}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 py-3 text-xs font-semibold tracking-wider uppercase text-black border border-black/30 rounded-sm"

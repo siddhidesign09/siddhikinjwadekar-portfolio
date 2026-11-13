@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowDownRight, Download, Sparkles, User } from "lucide-react";
 import { PERSONAL_DETAILS } from "../data/portfolioData";
+import { withBasePath } from "../router/RouterContext";
 
 export const Hero: React.FC = () => {
   return (
@@ -42,7 +43,7 @@ export const Hero: React.FC = () => {
               </a>
 
               <a
-                href="/assets/aistudio/Case_Studies_1bddce2b.pdf"
+                href={withBasePath("/assets/aistudio/Case_Studies_1bddce2b.pdf")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center gap-2 px-6 py-3.5 text-xs font-semibold tracking-wider uppercase text-[#141414] bg-transparent border border-black/20 hover:border-black/60 transition-all rounded-sm"
