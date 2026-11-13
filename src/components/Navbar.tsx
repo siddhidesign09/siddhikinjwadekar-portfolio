@@ -104,7 +104,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab = "home", onNavigate }
         {/* Zone 3: 1 Primary Action (Download Resume / Get In Touch) */}
         <div className="hidden md:flex items-center gap-4 shrink-0">
           <a
-            href={withBasePath("/assets/aistudio/Case_Studies_1bddce2b.pdf")}
+            href="https://drive.google.com/file/d/10zcVjKSjYeYAvrOoDvDAmffdgnHssG7b/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-semibold tracking-wider uppercase text-black bg-transparent border border-black/20 hover:border-black/60 transition-all rounded-sm overflow-hidden"
@@ -169,7 +169,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab = "home", onNavigate }
           </div>
           <div className="pt-4 border-t border-black/[0.08]">
             <a
-              href={withBasePath("/assets/aistudio/Case_Studies_1bddce2b.pdf")}
+              href="https://drive.google.com/file/d/10zcVjKSjYeYAvrOoDvDAmffdgnHssG7b/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 py-3 text-xs font-semibold tracking-wider uppercase text-black border border-black/30 rounded-sm"

@@ -19,7 +19,7 @@ import {
   Camera, 
   Dumbbell
 } from "lucide-react";
-import { Link, withBasePath } from "../router/RouterContext";
+import { Link } from "../router/RouterContext";
 import { PERSONAL_DETAILS } from "../data/portfolioData";
 
 export const AboutPage: React.FC = () => {
@@ -124,7 +124,7 @@ export const AboutPage: React.FC = () => {
                     <span>Get in Touch</span>
                   </a>
                   <a
-                    href={withBasePath("/assets/aistudio/Case_Studies_1bddce2b.pdf")}
+                    href="https://drive.google.com/file/d/10zcVjKSjYeYAvrOoDvDAmffdgnHssG7b/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded border border-black/20 text-[#141414] text-xs font-mono hover:border-black/50 transition-colors"

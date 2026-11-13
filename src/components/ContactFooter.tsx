@@ -143,7 +143,7 @@ export const ContactFooter: React.FC = () => {
                   <ArrowUpRight className="w-3 h-3 text-[#EA6C11]" />
                 </a>
                 <a
-                  href={withBasePath("/assets/aistudio/Case_Studies_1bddce2b.pdf")}
+                  href="https://drive.google.com/file/d/10zcVjKSjYeYAvrOoDvDAmffdgnHssG7b/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between p-2.5 rounded bg-white/[0.05] hover:bg-white/[0.1] text-xs font-mono text-white transition-colors"
