@@ -117,13 +117,6 @@ export const AboutPage: React.FC = () => {
                 {/* Quick Action Links */}
                 <div className="pt-4 flex flex-wrap items-center gap-4">
                   <a
-                    href="mailto:siddhikinj18@gmail.com"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-[#141414] text-white text-xs font-mono hover:bg-black transition-colors"
-                  >
-                    <Mail className="w-3.5 h-3.5 text-[#EA6C11]" />
-                    <span>Get in Touch</span>
-                  </a>
-                  <a
                     href="https://drive.google.com/file/d/10zcVjKSjYeYAvrOoDvDAmffdgnHssG7b/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
