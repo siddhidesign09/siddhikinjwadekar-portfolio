@@ -364,29 +364,15 @@ export const BitaminCatalogsPage: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Ecosystem Diagram Schematic */}
-                <div className="p-8 rounded-xl bg-[#F5F2EB] border border-black/10 text-center space-y-4">
-                  <span className="text-xs font-mono uppercase tracking-widest text-black/50 block">
-                    Ecosystem Diagram
-                  </span>
-                  <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-mono text-black">
-                    <span className="px-3 py-2 bg-white rounded border border-black/10 shadow-xs font-semibold">Business</span>
-                    <span className="text-[#EA6C11]">➔</span>
-                    <span className="px-3 py-2 bg-white rounded border border-black/10 shadow-xs font-semibold">WhatsApp Business Account</span>
-                    <span className="text-[#EA6C11]">➔</span>
-                    <span className="px-3 py-2 bg-white rounded border border-black/10 shadow-xs font-semibold">Catalog</span>
-                    <span className="text-[#EA6C11]">➔</span>
-                    <span className="px-3 py-2 bg-white rounded border border-black/10 shadow-xs font-semibold">Products &amp; Variants</span>
-                  </div>
-                  <div className="rounded-lg overflow-hidden border border-black/10 bg-white mt-4">
-                    <img
-                      src="https://raw.githubusercontent.com/siddhidesign09/case-study-images/refs/heads/main/Catalogs/2nd%20flow%20Catalog.png"
-                      alt="Ecosystem diagram connecting Business, WhatsApp Business Account, Catalog, and Products"
-                      className="block w-full h-auto"
-                    />
-                  </div>
+               {/* Ecosystem Diagram Schematic */}
+              <div className="rounded-lg overflow-hidden bg-white mt-4">
+              <img
+              src="https://raw.githubusercontent.com/siddhidesign09/case-study-images/refs/heads/main/Catalogs/2nd%20flow%20Catalog.png"
+              alt="Ecosystem diagram connecting Business, WhatsApp Business Account, Catalog, and Products"
+              className="block w-full h-auto"
+            />
+             </div>
                 </div>
-              </div>
             </section>
 
             {/* Section 5: What I Learned */}

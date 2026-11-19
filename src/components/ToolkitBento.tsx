@@ -24,8 +24,8 @@ export const ToolkitBento: React.FC = () => {
 
         {/* Bento Grid layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8">
-          {/* Bento Card 1: Figma & Design Systems (col-span-12 md:col-span-7) */}
-          <div className="md:col-span-7 rounded-xl bg-white border border-black/10 p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-black/30 transition-all">
+          {/* Bento Card 1: Figma & Design Systems (col-span-1 md:col-span-7) */}
+          <div className="col-span-1 md:col-span-7 min-w-0 rounded-xl bg-white border border-black/10 p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-black/30 transition-all">
             <div className="space-y-4">
               <div className="w-10 h-10 rounded-lg bg-[#FAF9F5] border border-black/10 flex items-center justify-center text-[#141414]">
                 <Figma className="w-5 h-5 text-[#EA6C11]" />
@@ -59,8 +59,8 @@ export const ToolkitBento: React.FC = () => {
             </div>
           </div>
 
-          {/* Bento Card 2: Modern AI & Prototyping Workflows (col-span-12 md:col-span-5) */}
-          <div className="md:col-span-5 rounded-xl bg-white border border-black/10 p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-black/30 transition-all">
+          {/* Bento Card 2: Modern AI & Prototyping Workflows (col-span-1 md:col-span-5) */}
+          <div className="col-span-1 md:col-span-5 min-w-0 rounded-xl bg-white border border-black/10 p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-black/30 transition-all">
             <div className="space-y-4">
               <div className="w-10 h-10 rounded-lg bg-[#FAF9F5] border border-black/10 flex items-center justify-center text-[#141414]">
                 <Cpu className="w-5 h-5 text-[#EA6C11]" />
@@ -78,8 +78,8 @@ export const ToolkitBento: React.FC = () => {
               <span className="text-[#EA6C11]">✦ High Agility</span>
             </div>
           </div>
-          {/* Bento Card 3: User Research & Usability Testing (col-span-12 md:col-span-5) */}
-          <div className="md:col-span-5 rounded-xl bg-white border border-black/10 p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-black/30 transition-all">
+          {/* Bento Card 3: User Research & Usability Testing (col-span-1 md:col-span-5) */}
+          <div className="col-span-1 md:col-span-5 min-w-0 rounded-xl bg-white border border-black/10 p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-black/30 transition-all">
             <div className="space-y-4">
               <div className="w-10 h-10 rounded-lg bg-[#FAF9F5] border border-black/10 flex items-center justify-center text-[#141414]">
                 <Eye className="w-5 h-5 text-[#EA6C11]" />
@@ -98,8 +98,8 @@ export const ToolkitBento: React.FC = () => {
             </div>
           </div>
 
-          {/* Bento Card 4: Cross-Functional Alignment (col-span-12 md:col-span-7) */}
-          <div className="md:col-span-7 rounded-xl bg-white border border-black/10 p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-black/30 transition-all">
+          {/* Bento Card 4: Cross-Functional Alignment (col-span-1 md:col-span-7) */}
+          <div className="col-span-1 md:col-span-7 min-w-0 rounded-xl bg-white border border-black/10 p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-black/30 transition-all">
             <div className="space-y-4">
               <div className="w-10 h-10 rounded-lg bg-[#FAF9F5] border border-black/10 flex items-center justify-center text-[#141414]">
                 <Users className="w-5 h-5 text-[#EA6C11]" />
@@ -119,8 +119,8 @@ export const ToolkitBento: React.FC = () => {
             </div>
           </div>
 
-          {/* Bento Card 5: Interactive Design Process Stepper (col-span-12) */}
-          <div className="col-span-12 rounded-xl bg-[#FAF9F5] border border-black/10 p-6 sm:p-10 shadow-xs">
+          {/* Bento Card 5: Interactive Design Process Stepper (col-span-1 md:col-span-12) */}
+          <div className="col-span-1 md:col-span-12 min-w-0 rounded-xl bg-[#FAF9F5] border border-black/10 p-6 sm:p-10 shadow-xs">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
               <div>
                 <span className="text-xs font-mono uppercase tracking-widest text-[#EA6C11]">

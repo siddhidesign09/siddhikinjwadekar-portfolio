@@ -64,7 +64,7 @@ export const ContactFooter: React.FC = () => {
           </h2>
 
           <p className="text-base sm:text-lg text-white/60 max-w-2xl font-light pt-2">
-            Junior UI/UX Designer at Three Matters Lab Pvt Ltd. I am always interested in discussing digital product design, UX systems, and design mentorship.
+            Junior UI/UX Designer at Three Matters Lab Pvt. Ltd. Always open to discussing digital product design, UX, and creative ideas.
           </p>
         </div>
 

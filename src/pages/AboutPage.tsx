@@ -17,7 +17,9 @@ import {
   Users, 
   Compass, 
   Camera, 
-  Dumbbell
+  Palette,
+  Utensils,
+  NotebookPen
 } from "lucide-react";
 import { Link } from "../router/RouterContext";
 import { PERSONAL_DETAILS } from "../data/portfolioData";
@@ -92,7 +94,7 @@ export const AboutPage: React.FC = () => {
                     Biography
                   </span>
                   <p className="text-lg sm:text-xl text-[#141414] font-normal leading-snug">
-                    I'm a UX designer currently pursuing my Master's in User Experience Design with a strong interest in teaching, mentoring, and supporting students in understanding design thinking, UX processes, and digital product design.
+                    I'm a UX designer with a Master's degree in User Experience Design. I enjoy understanding how people interact with digital products and finding ways to make those experiences simpler, smoother and more meaningful. I'm curious by nature and love turning everyday problems into thoughtful design solutions that make a difference.
                   </p>
                 </div>
 
@@ -103,13 +105,13 @@ export const AboutPage: React.FC = () => {
                   </span>
                   <div className="space-y-3 text-sm sm:text-base text-[#454747]">
                     <p className="leading-relaxed">
-                      I enjoy simplifying complex user experience challenges into practical design solutions.
+                      What I love about design is the process of understanding a problem and finding a simple yet effective way to solve it.
                     </p>
                     <p className="leading-relaxed">
-                      I believe users learn and interact best through clear, well-structured interfaces and meaningful interactions.
+                      I believe a good design isn't just about how things look, but also about how they feel and work for the people using them.
                     </p>
                     <p className="leading-relaxed">
-                      I aim to design seamless digital experiences, apply design thinking, and iterate through user feedback to enhance usability.
+                      I enjoy exploring ideas, experimenting with different approaches, and learning along the way. For me, every design challenge is an opportunity to create something meaningful and make the user experience a little better.
                     </p>
                   </div>
                 </div>
@@ -253,8 +255,8 @@ export const AboutPage: React.FC = () => {
                 {/* Master Degree */}
                 <div className="p-6 rounded-xl bg-white border border-black/10 shadow-xs space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-mono text-[#EA6C11] uppercase font-semibold">
-                      Pursuing · 2024–2026
+                    <span className="text-[10px] font-mono text-[#5D5F5F] uppercase">
+                    2024–2026
                     </span>
                     <span className="text-xs font-mono text-[#8E9090]">Pune</span>
                   </div>
@@ -296,7 +298,7 @@ export const AboutPage: React.FC = () => {
         <section className="space-y-6 pt-8 border-t border-black/[0.08]">
           <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#5D5F5F]">
             <BookOpen className="w-3.5 h-3.5 text-[#EA6C11]" />
-            <span>PHILOSOPHY &amp; MENTORSHIP</span>
+            <span>PHILOSOPHY</span>
           </div>
           
           <h2 className="text-2xl sm:text-4xl font-normal text-[#141414] tracking-tight">
@@ -305,13 +307,13 @@ export const AboutPage: React.FC = () => {
 
           <div className="p-8 sm:p-12 rounded-2xl bg-[#F6F4ED] border border-black/10 space-y-4 max-w-4xl">
             <span className="text-[10px] font-mono uppercase tracking-wider text-[#EA6C11] block font-semibold">
-              Learning &amp; Mentorship Philosophy
+              Learning &amp; Evolving
             </span>
             <blockquote className="text-lg sm:text-2xl font-serif italic text-[#141414] leading-relaxed">
               "I believe meaningful learning emerges when complex ideas are approached with clarity, curiosity, and thoughtful guidance. By creating an environment that encourages questioning and structured exploration, students gain confidence in both their understanding and their ability to apply knowledge. My aim is to support this learning process with patience, empathy, and a strong respect for academic growth."
             </blockquote>
             <p className="text-xs font-mono text-[#5D5F5F] pt-2">
-              — Siddhi Kinjawadekar · Product Designer &amp; Design Mentor
+              — Siddhi Kinjawadekar · Product Designer
             </p>
           </div>
         </section>
@@ -328,8 +330,8 @@ export const AboutPage: React.FC = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-xl bg-white border border-black/10 shadow-xs space-y-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 auto-rows-fr gap-6">
+            <div className="h-full p-6 rounded-xl bg-white border border-black/10 shadow-xs space-y-3">
               <div className="flex items-center gap-2">
                 <Compass className="w-4 h-4 text-[#EA6C11]" />
                 <h3 className="text-sm font-semibold text-[#141414]">Design &amp; Research</h3>
@@ -345,7 +347,7 @@ export const AboutPage: React.FC = () => {
               </ul>
             </div>
 
-            <div className="p-6 rounded-xl bg-white border border-black/10 shadow-xs space-y-3">
+            <div className="h-full p-6 rounded-xl bg-white border border-black/10 shadow-xs space-y-3">
               <div className="flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-[#EA6C11]" />
                 <h3 className="text-sm font-semibold text-[#141414]">Tools &amp; Systems</h3>
@@ -358,22 +360,6 @@ export const AboutPage: React.FC = () => {
                 <li>· Low-Code Builders &amp; Logic</li>
                 <li>· Responsive Breakpoint Craft</li>
                 <li>· Engineering Handoff Specs</li>
-              </ul>
-            </div>
-
-            <div className="p-6 rounded-xl bg-white border border-black/10 shadow-xs space-y-3">
-              <div className="flex items-center gap-2">
-                <Users className="w-4 h-4 text-[#EA6C11]" />
-                <h3 className="text-sm font-semibold text-[#141414]">Teaching &amp; Mentorship</h3>
-              </div>
-              <ul className="space-y-1.5 text-xs text-[#5D5F5F]">
-                <li>· Design Thinking Guidance</li>
-                <li>· UX Process Workshops</li>
-                <li>· Student Mentorship</li>
-                <li>· Academic Research Support</li>
-                <li>· Empathetic Design Feedback</li>
-                <li>· Portfolio &amp; Case Study Guidance</li>
-                <li>· Cross-Functional Communication</li>
               </ul>
             </div>
           </div>
@@ -391,28 +377,7 @@ export const AboutPage: React.FC = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-            <div className="p-4 rounded-xl bg-white border border-black/10 text-center space-y-2 hover:border-[#EA6C11] transition-colors">
-              <div className="w-10 h-10 rounded-full bg-[#EA6C11]/10 text-[#EA6C11] mx-auto flex items-center justify-center">
-                <BookOpen className="w-5 h-5" />
-              </div>
-              <span className="text-xs font-medium text-[#141414] block">Mentoring</span>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white border border-black/10 text-center space-y-2 hover:border-[#EA6C11] transition-colors">
-              <div className="w-10 h-10 rounded-full bg-[#EA6C11]/10 text-[#EA6C11] mx-auto flex items-center justify-center">
-                <Layers className="w-5 h-5" />
-              </div>
-              <span className="text-xs font-medium text-[#141414] block">Design Systems</span>
-            </div>
-
-            <div className="p-4 rounded-xl bg-white border border-black/10 text-center space-y-2 hover:border-[#EA6C11] transition-colors">
-              <div className="w-10 h-10 rounded-full bg-[#EA6C11]/10 text-[#EA6C11] mx-auto flex items-center justify-center">
-                <Compass className="w-5 h-5" />
-              </div>
-              <span className="text-xs font-medium text-[#141414] block">Traveling</span>
-            </div>
-
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             <div className="p-4 rounded-xl bg-white border border-black/10 text-center space-y-2 hover:border-[#EA6C11] transition-colors">
               <div className="w-10 h-10 rounded-full bg-[#EA6C11]/10 text-[#EA6C11] mx-auto flex items-center justify-center">
                 <Camera className="w-5 h-5" />
@@ -422,16 +387,30 @@ export const AboutPage: React.FC = () => {
 
             <div className="p-4 rounded-xl bg-white border border-black/10 text-center space-y-2 hover:border-[#EA6C11] transition-colors">
               <div className="w-10 h-10 rounded-full bg-[#EA6C11]/10 text-[#EA6C11] mx-auto flex items-center justify-center">
-                <Dumbbell className="w-5 h-5" />
+                <Palette className="w-5 h-5" />
               </div>
-              <span className="text-xs font-medium text-[#141414] block">Fitness</span>
+              <span className="text-xs font-medium text-[#141414] block">Painting &amp; Sketching</span>
             </div>
 
             <div className="p-4 rounded-xl bg-white border border-black/10 text-center space-y-2 hover:border-[#EA6C11] transition-colors">
               <div className="w-10 h-10 rounded-full bg-[#EA6C11]/10 text-[#EA6C11] mx-auto flex items-center justify-center">
                 <Sparkles className="w-5 h-5" />
               </div>
-              <span className="text-xs font-medium text-[#141414] block">Creative Craft</span>
+              <span className="text-xs font-medium text-[#141414] block">Creative Crafts &amp; DIY</span>
+            </div>
+
+            <div className="p-4 rounded-xl bg-white border border-black/10 text-center space-y-2 hover:border-[#EA6C11] transition-colors">
+              <div className="w-10 h-10 rounded-full bg-[#EA6C11]/10 text-[#EA6C11] mx-auto flex items-center justify-center">
+                <Utensils className="w-5 h-5" />
+              </div>
+              <span className="text-xs font-medium text-[#141414] block">Exploring Food Places</span>
+            </div>
+
+            <div className="p-4 rounded-xl bg-white border border-black/10 text-center space-y-2 hover:border-[#EA6C11] transition-colors">
+              <div className="w-10 h-10 rounded-full bg-[#EA6C11]/10 text-[#EA6C11] mx-auto flex items-center justify-center">
+                <NotebookPen className="w-5 h-5" />
+              </div>
+              <span className="text-xs font-medium text-[#141414] block">Doodling &amp; Journaling</span>
             </div>
           </div>
         </section>
@@ -535,7 +514,7 @@ export const AboutPage: React.FC = () => {
                   <span>Pune, India</span>
                 </div>
                 <p className="text-xs text-[#5D5F5F] leading-relaxed">
-                  Junior UI/UX Designer at Three Matters Lab Pvt Ltd. Available for design discussions &amp; mentoring.
+                  Junior UI/UX Designer at Three Matters Lab Pvt Ltd. Available for design discussions.
                 </p>
               </div>
 
